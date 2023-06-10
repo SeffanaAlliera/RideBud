@@ -26,6 +26,13 @@
             android:layout_marginTop="150sp"
             android:layout_marginLeft="14sp"
             android:src="@drawable/travel_journal" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14sp"
+            android:text="Travel Logs"
+            android:layout_below="@id/travel_log" />
+
         <ImageView
             android:id="@+id/map"
             android:layout_width="75sp"
@@ -34,6 +41,14 @@
             android:layout_toEndOf="@+id/travel_log"
             android:layout_marginLeft="50sp"
             android:src="@drawable/map" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@+id/travel_log"
+            android:layout_marginLeft="54sp"
+            android:text="Navigation"
+            android:layout_below="@id/map" />
+
         <ImageView
             android:id="@+id/weather"
             android:layout_width="75sp"
