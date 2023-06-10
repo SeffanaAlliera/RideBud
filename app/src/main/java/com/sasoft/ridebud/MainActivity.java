@@ -1,7 +1,11 @@
 package com.sasoft.ridebud;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,10 +22,102 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView travel_log_img = findViewById(R.id.travel_log);
+        ImageView map_img = findViewById(R.id.map);
+        ImageView weather_img = findViewById(R.id.weather);
+        ImageView statistics_img = findViewById(R.id.statistics);
+        ImageView reminders_img = findViewById(R.id.reminders);
+        ImageView price_monitor_img = findViewById(R.id.price_monitor);
+        ImageView chat_img = findViewById(R.id.chat);
+        ImageView emergency_img = findViewById(R.id.emergency);
+        ImageView goals_img = findViewById(R.id.goals);
+        travel_log_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Travel Logs clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        map_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Map clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        weather_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Weather clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        statistics_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Statistics clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        reminders_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Reminders clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        price_monitor_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Price Monitor clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        chat_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Chat clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        emergency_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Emergency clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
+        goals_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Perform the desired action here, such as starting a new activity
+                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
+                //startActivity(intent);
+                Toast.makeText(MainActivity.this, "Goals clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -54,12 +150,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle menu item clicks here
         int itemId = menuItem.getItemId();
 
-        if (itemId == R.id.nav_item1) {
-            // Handle Item 1 click
-            Toast.makeText(this, "Item 1 clicked", Toast.LENGTH_SHORT).show();
-        } else if (itemId == R.id.nav_item2) {
-            // Handle Item 2 click
-            Toast.makeText(this, "Item 2 clicked", Toast.LENGTH_SHORT).show();
+        if (itemId == R.id.profile) {
+            Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
+        } else if (itemId == R.id.about_us) {
+            Toast.makeText(this, "About Us clicked", Toast.LENGTH_SHORT).show();
+        } else if (itemId == R.id.exit) {
+            Toast.makeText(this, "Exit clicked", Toast.LENGTH_SHORT).show();
         }
 
         // Close the drawer after handling the click

@@ -2,13 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:title="Profile"
-            android:id="@+id/profile"/>
+            android:id="@+id/profile"
+            android:title="Profile" />
         <item
-            android:id="@+id/nav_item1"
+            android:id="@+id/about_us"
             android:title="About us" />
         <item
-            android:id="@+id/nav_item2"
+            android:id="@+id/exit"
             android:title="Exit" />
     </group>
 </menu>
