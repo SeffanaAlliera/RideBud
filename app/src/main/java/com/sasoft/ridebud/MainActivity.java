@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, travel_logs_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Travel Logs clicked", Toast.LENGTH_SHORT).show();
             }
         });
         map_img.setOnClickListener(new View.OnClickListener() {
@@ -53,7 +52,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, navigation_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Map clicked", Toast.LENGTH_SHORT).show();
             }
         });
         weather_img.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, weather_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Weather clicked", Toast.LENGTH_SHORT).show();
             }
         });
         statistics_img.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, statistics_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Statistics clicked", Toast.LENGTH_SHORT).show();
             }
         });
         reminders_img.setOnClickListener(new View.OnClickListener() {
@@ -80,7 +76,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, reminders_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Reminders clicked", Toast.LENGTH_SHORT).show();
             }
         });
         price_monitor_img.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +84,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, price_monitor_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Price Monitor clicked", Toast.LENGTH_SHORT).show();
             }
         });
         chat_img.setOnClickListener(new View.OnClickListener() {
@@ -98,7 +92,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, social_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Chat clicked", Toast.LENGTH_SHORT).show();
             }
         });
         emergency_img.setOnClickListener(new View.OnClickListener() {
@@ -107,7 +100,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, emergency_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Emergency clicked", Toast.LENGTH_SHORT).show();
             }
         });
         goals_img.setOnClickListener(new View.OnClickListener() {
@@ -116,7 +108,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 // Perform the desired action here, such as starting a new activity
                 Intent intent = new Intent(MainActivity.this, goals_act.class);
                 startActivity(intent);
-                Toast.makeText(MainActivity.this, "Goals clicked", Toast.LENGTH_SHORT).show();
             }
         });
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -151,19 +142,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int itemId = menuItem.getItemId();
 
         if (itemId == R.id.home) {
-            Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
             startActivity(intent);
         } else if (itemId == R.id.profile) {
-            Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, profile_act.class);
             startActivity(intent);
         } else if (itemId == R.id.about_us) {
-            Toast.makeText(this, "About Us clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, about_us.class);
             startActivity(intent);
         } else if (itemId == R.id.exit) {
-            Toast.makeText(this, "Exit clicked", Toast.LENGTH_SHORT).show();
             System.exit(0);
         }
 

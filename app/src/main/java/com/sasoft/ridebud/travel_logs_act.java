@@ -55,19 +55,15 @@ public class travel_logs_act extends AppCompatActivity implements NavigationView
         int itemId = menuItem.getItemId();
 
         if (itemId == R.id.home) {
-            Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(travel_logs_act.this, MainActivity.class);
             startActivity(intent);
         } else if (itemId == R.id.profile) {
-            Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(travel_logs_act.this, profile_act.class);
             startActivity(intent);
         } else if (itemId == R.id.about_us) {
-            Toast.makeText(this, "About Us clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(travel_logs_act.this, about_us.class);
             startActivity(intent);
         } else if (itemId == R.id.exit) {
-            Toast.makeText(this, "Exit clicked", Toast.LENGTH_SHORT).show();
             System.exit(0);
         }
 
