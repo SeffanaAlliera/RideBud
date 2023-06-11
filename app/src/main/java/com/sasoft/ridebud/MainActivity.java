@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, travel_logs_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Travel Logs clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, navigation_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Map clicked", Toast.LENGTH_SHORT).show();
             }
         });
