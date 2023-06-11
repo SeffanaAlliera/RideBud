@@ -13,6 +13,9 @@
         android:theme="@style/Theme.RideBud"
         tools:targetApi="31">
         <activity
+            android:name=".navigation_act"
+            android:exported="false" />
+        <activity
             android:name=".profile_act"
             android:exported="false" />
         <activity
@@ -51,10 +54,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
 
-        <activity
-            android:name=".navigation_act"
-            android:exported="false"
-            android:label="@string/title_activity_navigation" />
         <activity
             android:name=".travel_logs_act"
             android:exported="false" />

@@ -60,8 +60,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, weather_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Weather clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, statistics_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Statistics clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, reminders_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Reminders clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -87,8 +87,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, price_monitor_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Price Monitor clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -96,8 +96,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, social_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Chat clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -105,8 +105,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, emergency_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Emergency clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -114,8 +114,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                //Intent intent = new Intent(MainActivity.this, DestinationActivity.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, goals_act.class);
+                startActivity(intent);
                 Toast.makeText(MainActivity.this, "Goals clicked", Toast.LENGTH_SHORT).show();
             }
         });
@@ -156,6 +156,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(intent);
         } else if (itemId == R.id.profile) {
             Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, profile_act.class);
+            startActivity(intent);
         } else if (itemId == R.id.about_us) {
             Toast.makeText(this, "About Us clicked", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(MainActivity.this, about_us.class);
