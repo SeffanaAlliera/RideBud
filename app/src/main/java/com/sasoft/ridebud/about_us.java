@@ -27,25 +27,23 @@ private NavigationView navigationView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
-    Toolbar toolbar = findViewById(R.id.toolbar);
-    setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-    drawerLayout = findViewById(R.id.drawer_layout);
-    toggle = new ActionBarDrawerToggle(
-            this,
-            drawerLayout,
-            toolbar,
-            R.string.navigation_drawer_open,
-            R.string.navigation_drawer_close
-    );
-    drawerLayout.addDrawerListener(toggle);
-    toggle.syncState();
+        drawerLayout = findViewById(R.id.drawer_layout);
+        toggle = new ActionBarDrawerToggle(
+                this,
+                drawerLayout,
+                toolbar,
+                R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close
+        );
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
 
-    navigationView = findViewById(R.id.nav_view);
-    navigationView.setNavigationItemSelectedListener(this);
+        navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
     }
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (toggle.onOptionsItemSelected(item)) {
@@ -67,6 +65,8 @@ private NavigationView navigationView;
             Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
         } else if (itemId == R.id.about_us) {
             Toast.makeText(this, "About Us clicked", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(about_us.this, about_us.class);
+            startActivity(intent);
         } else if (itemId == R.id.exit) {
             Toast.makeText(this, "Exit clicked", Toast.LENGTH_SHORT).show();
             System.exit(0);
@@ -77,5 +77,4 @@ private NavigationView navigationView;
 
         return true;
     }
-
 }

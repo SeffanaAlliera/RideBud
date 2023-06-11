@@ -1,11 +1,14 @@
 package com.sasoft.ridebud;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,8 +24,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
     private NavigationView navigationView;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,7 +119,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Toast.makeText(MainActivity.this, "Goals clicked", Toast.LENGTH_SHORT).show();
             }
         });
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -152,6 +152,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (itemId == R.id.home) {
             Toast.makeText(this, "Home clicked", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            startActivity(intent);
         } else if (itemId == R.id.profile) {
             Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
         } else if (itemId == R.id.about_us) {
@@ -168,5 +170,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         return true;
     }
-
 }
