@@ -24,15 +24,15 @@
             android:layout_width="75sp"
             android:layout_height="75sp"
             android:layout_marginTop="150sp"
-            android:layout_marginLeft="17sp"
+            android:layout_toStartOf="@id/map"
+            android:layout_marginRight="50sp"
             android:src="@drawable/travel_journal" />
         <ImageView
             android:id="@+id/map"
             android:layout_width="75sp"
             android:layout_height="75sp"
             android:layout_marginTop="150sp"
-            android:layout_toEndOf="@+id/travel_log"
-            android:layout_marginLeft="50sp"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/map" />
         <ImageView
             android:id="@+id/weather"
@@ -48,7 +48,8 @@
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
             android:layout_below="@id/travel_log"
-            android:layout_marginLeft="17sp"
+            android:layout_toStartOf="@id/reminders"
+            android:layout_marginRight="50sp"
             android:src="@drawable/analysis" />
         <ImageView
             android:id="@+id/reminders"
@@ -56,8 +57,7 @@
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
             android:layout_below="@id/map"
-            android:layout_toEndOf="@+id/statistics"
-            android:layout_marginLeft="50sp"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/reminder" />
         <ImageView
             android:id="@+id/price_monitor"
@@ -74,7 +74,8 @@
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
             android:layout_below="@id/statistics"
-            android:layout_marginLeft="17sp"
+            android:layout_toStartOf="@id/emergency"
+            android:layout_marginRight="50sp"
             android:src="@drawable/chat" />
         <ImageView
             android:id="@+id/emergency"
@@ -82,8 +83,7 @@
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
             android:layout_below="@id/reminders"
-            android:layout_toEndOf="@+id/statistics"
-            android:layout_marginLeft="50sp"
+            android:layout_centerHorizontal="true"
             android:src="@drawable/siren" />
         <ImageView
             android:id="@+id/goals"
@@ -96,69 +96,69 @@
             android:src="@drawable/target" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/travel_log"
+            android:layout_toLeftOf="@id/map"
+            android:layout_marginRight="50sp"
             android:text="Travel Logs"
-            android:textColor="@color/black"
-            android:layout_below="@id/travel_log" />
+            android:textColor="@color/black" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_toEndOf="@+id/travel_log"
-            android:layout_marginLeft="54sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:text="Navigation"
             android:textColor="@color/black"
             android:layout_below="@id/map" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_toEndOf="@+id/map"
-            android:layout_marginLeft="60sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/weather"
+            android:layout_toRightOf="@id/map"
+            android:layout_marginLeft="62sp"
             android:text="Weather"
-            android:textColor="@color/black"
-            android:layout_below="@id/weather" />
+            android:textColor="@color/black" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="24sp"
             android:text="Statistics"
             android:textColor="@color/black"
             android:layout_below="@id/statistics" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_toEndOf="@+id/statistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="54sp"
             android:text="Reminders"
             android:textColor="@color/black"
             android:layout_below="@id/reminders" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/reminders"
             android:layout_marginLeft="45sp"
             android:text="Price Monitor"
             android:textColor="@color/black"
             android:layout_below="@id/price_monitor" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="33sp"
             android:text="Social"
             android:textColor="@color/black"
             android:layout_below="@id/chat" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_toEndOf="@+id/statistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="53sp"
             android:text="Emergency"
             android:textColor="@color/black"
             android:layout_below="@id/emergency" />
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/reminders"
             android:layout_marginLeft="70sp"
             android:text="Goals"
