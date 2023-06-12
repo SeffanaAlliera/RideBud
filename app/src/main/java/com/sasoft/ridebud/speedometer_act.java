@@ -9,11 +9,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class statistics_act extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class speedometer_act extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle toggle;
@@ -21,7 +20,7 @@ public class statistics_act extends AppCompatActivity implements NavigationView.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_statistics);
+        setContentView(R.layout.activity_speedometer);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -55,13 +54,13 @@ public class statistics_act extends AppCompatActivity implements NavigationView.
         int itemId = menuItem.getItemId();
 
         if (itemId == R.id.home) {
-            Intent intent = new Intent(statistics_act.this, MainActivity.class);
+            Intent intent = new Intent(speedometer_act.this, MainActivity.class);
             startActivity(intent);
         } else if (itemId == R.id.profile) {
-            Intent intent = new Intent(statistics_act.this, profile_act.class);
+            Intent intent = new Intent(speedometer_act.this, profile_act.class);
             startActivity(intent);
         } else if (itemId == R.id.about_us) {
-            Intent intent = new Intent(statistics_act.this, about_us.class);
+            Intent intent = new Intent(speedometer_act.this, about_us.class);
             startActivity(intent);
         } else if (itemId == R.id.exit) {
             System.exit(0);

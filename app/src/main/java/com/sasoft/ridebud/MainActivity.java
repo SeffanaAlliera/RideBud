@@ -1,15 +1,10 @@
 package com.sasoft.ridebud;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -32,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ImageView travel_log_img = findViewById(R.id.travel_log);
         ImageView map_img = findViewById(R.id.map);
         ImageView weather_img = findViewById(R.id.weather);
-        ImageView statistics_img = findViewById(R.id.statistics);
+        ImageView speedometer_img = findViewById(R.id.speedometer);
         ImageView reminders_img = findViewById(R.id.reminders);
         ImageView price_monitor_img = findViewById(R.id.price_monitor);
         ImageView chat_img = findViewById(R.id.chat);
@@ -62,11 +57,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
             }
         });
-        statistics_img.setOnClickListener(new View.OnClickListener() {
+        speedometer_img.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Perform the desired action here, such as starting a new activity
-                Intent intent = new Intent(MainActivity.this, statistics_act.class);
+                Intent intent = new Intent(MainActivity.this, speedometer_act.class);
                 startActivity(intent);
             }
         });

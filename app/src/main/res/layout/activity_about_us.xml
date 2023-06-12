@@ -27,7 +27,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="100sp"
             android:textColor="@color/black"
-            android:text="Developer/s:"
+            android:text="Just a Prototype"
             android:textSize="20sp" />
         <TextView
             android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
             android:layout_marginStart="128sp"
             android:layout_marginTop="20sp"
             android:textColor="@color/black"
-            android:text="Mark Aleson Marabe"
+            android:text="No Usable Functionalities :("
             android:textSize="20sp" />
     </RelativeLayout>
 

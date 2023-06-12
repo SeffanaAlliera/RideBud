@@ -43,14 +43,14 @@
             android:layout_marginLeft="50sp"
             android:src="@drawable/cloudy" />
         <ImageView
-            android:id="@+id/statistics"
+            android:id="@+id/speedometer"
             android:layout_width="75sp"
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
             android:layout_below="@id/travel_log"
             android:layout_toStartOf="@id/reminders"
             android:layout_marginRight="50sp"
-            android:src="@drawable/analysis" />
+            android:src="@drawable/speedometer" />
         <ImageView
             android:id="@+id/reminders"
             android:layout_width="75sp"
@@ -73,7 +73,7 @@
             android:layout_width="75sp"
             android:layout_height="75sp"
             android:layout_marginTop="100sp"
-            android:layout_below="@id/statistics"
+            android:layout_below="@id/speedometer"
             android:layout_toStartOf="@id/emergency"
             android:layout_marginRight="50sp"
             android:src="@drawable/chat" />
@@ -121,10 +121,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24sp"
-            android:text="Statistics"
+            android:layout_marginLeft="15sp"
+            android:text="Speedometer"
             android:textColor="@color/black"
-            android:layout_below="@id/statistics" />
+            android:layout_below="@id/speedometer" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

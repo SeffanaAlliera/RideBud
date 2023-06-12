@@ -6,29 +6,25 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".statistics_act">
+    tools:context=".speedometer_act">
 
     <!-- Your main content RelativeLayout -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/white">
+        android:background="#0D0D0D">
 
         <include
             layout="@layout/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/developertv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100sp"
-            android:textColor="@color/black"
-            android:text="Statistics Activity"
-            android:textSize="20sp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/speedometer_temp" />
+
     </RelativeLayout>
 
     <!-- NavigationView -->
